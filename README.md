@@ -75,7 +75,7 @@ To compile our program, click on the "Compile" button.
 
 If the process completes without errors, a message indicating successful compilation will be displayed.
 
-![11](images/11.png)
+![13](images/13.png)
 
 
 4. Setup
