@@ -11,9 +11,9 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
   https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d?usp=sharing
 
 
-##Zokrates Plugin
+## Zokrates Plugin
 
 
 
 
-  For documentation on ZoKrates open the link. [link](https://zokrates.github.io/gettingstarted.html).
+  For documentation on ZoKrates open the [link](https://zokrates.github.io/gettingstarted.html).
