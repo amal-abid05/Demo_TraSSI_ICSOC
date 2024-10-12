@@ -13,7 +13,22 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
 
 ## Zokrates Plugin
 
+We provide a step-by-step guide to assist you in compiling, setting up, exporting the verifier, computing the witness, and generating proofs.
 
+For documentation on ZoKrates open the [link](https://zokrates.github.io/gettingstarted.html).
 
+To begin:
 
-  For documentation on ZoKrates open the [link](https://zokrates.github.io/gettingstarted.html).
+1. Open the [Remix IDE](https://remix.ethereum.org/) in a browser window.
+
+2. Navigate to the Plugin Manager and activate the following plugins:
+
+- ZoKrates
+
+- Solidity Compiler (already activated)
+
+- Deploy & Run Transactions (already activated)
+
+Once the plugins are activated, go to the ZoKrates plugin and click on the example hyperlink, accepting any necessary permissions.
+
+This will prepare your environment for the subsequent tasks.
