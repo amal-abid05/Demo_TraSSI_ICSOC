@@ -74,3 +74,10 @@ To compile our program, click on the "Compile" button.
 If the process completes without errors, a message indicating successful compilation will be displayed.
 
 ![11](images/11.png)
+
+
+4. Setup
+
+The next step is to perform the setup. Click on "Setup" to expand the section, then select "Run Setup."
+
+If the setup is successful, a confirmation message will appear. You can download the proving and verifying keys by clicking the "Download Keys" button.
