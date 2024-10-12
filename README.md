@@ -38,3 +38,39 @@ This will prepare your environment for the subsequent tasks.
 ![3](images/3.png) 
 
 ![7](images/7.png)
+
+
+3. Compilation
+
+``` bash
+from "ecc/babyjubjubParams" import BabyJubJubParams;
+import "ecc/babyjubjubParams" as context;
+import "ecc/proofOfOwnership" as proofOfOwnership;
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+def proofOfKnowledge(field[4] secret, field[2] hash) -> bool {
+  return (hash == sha256packed(secret));
+  }
+
+def verifyThreashold(field revenue, field max_Threashold) -> bool {
+    // Check if the revenue exceeds the max_threashold
+    return (revenue <= max_Threashold);
+}
+  
+def main(field[2] pkA, field[2] pkB, field[2] hash, private field skA, private field[4] secret, private field revenue, field max_Threashold, private field skB) -> bool {
+  BabyJubJubParams context = context();
+  bool orgAhasKnowledge = proofOfKnowledge(secret, hash);
+  bool orgAhasOwnership = proofOfOwnership(pkA, skA, context);
+  bool audhasOwnership = proofOfOwnership(pkB, skB, context);
+  bool isOrgAwithKnowledge = (orgAhasKnowledge && orgAhasOwnership);
+  bool out1 = (isOrgAwithKnowledge == true || audhasOwnership == true);
+  bool out2 = verifyThreashold(revenue , max_Threashold);
+  return (out1 && out2);
+  }
+```
+
+To compile our program, click on the "Compile" button.
+
+If the process completes without errors, a message indicating successful compilation will be displayed.
+
+![11](images/11.png)
