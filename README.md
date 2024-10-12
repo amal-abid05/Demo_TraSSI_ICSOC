@@ -32,3 +32,5 @@ To begin:
 Once the plugins are activated, go to the ZoKrates plugin and click on the example hyperlink, accepting any necessary permissions.
 
 This will prepare your environment for the subsequent tasks.
+
+![2](images/2.png)
