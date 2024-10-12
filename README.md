@@ -42,6 +42,8 @@ This will prepare your environment for the subsequent tasks.
 
 3. Compilation
 
+To proceed, copy the entire program code from the designated source.
+
 ``` bash
 from "ecc/babyjubjubParams" import BabyJubJubParams;
 import "ecc/babyjubjubParams" as context;
