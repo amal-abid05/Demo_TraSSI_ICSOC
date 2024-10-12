@@ -35,4 +35,4 @@ This will prepare your environment for the subsequent tasks.
 
 ![2](images/2.png)
 
-![3](images/3.png)
+![3](images/3.png) ![7](images/7.png)
