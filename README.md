@@ -34,3 +34,5 @@ Once the plugins are activated, go to the ZoKrates plugin and click on the examp
 This will prepare your environment for the subsequent tasks.
 
 ![2](images/2.png)
+
+![3](images/3.png)
