@@ -8,7 +8,7 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
   
 - For FHE computations, the Python scripts are available and ready to run directly through a Colab link, provided in a ".pynb" notebook format. This approach ensures easy execution and accessibility, significantly reducing installation barriers and streamlining the reproduction process for researchers.
   
-  https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d?usp=sharing
+  https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
 
 
 ## Zokrates Plugin
