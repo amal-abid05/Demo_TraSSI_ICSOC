@@ -85,3 +85,14 @@ The next step is to perform the setup. Click on "Setup" to expand the section, t
 If the setup is successful, a confirmation message will appear. You can download the proving and verifying keys by clicking the "Download Keys" button.
 
 ![13](images/13.png)
+
+5. Export Verifier
+
+We move to the Export Verifier step.
+
+If the export is successful, you will have the option to either open the generated verifier directly in the Remix Editor or download it. By selecting the "Open in Remix Editor" option, the plugin will automatically create and open the "verifier.sol" file within the Remix Editor. 
+
+Instructions for compiling and deploying the Verifier smart contract are provided further on.
+
+![16](images/16.png)
+
