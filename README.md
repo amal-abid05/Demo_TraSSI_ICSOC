@@ -97,3 +97,22 @@ Instructions for compiling and deploying the Verifier smart contract are provide
 
 ![16](images/16.png)
 
+
+
+Compile and Deploy "Verifier.sol"
+
+To compile and deploy the verifier.sol contract, begin by navigating to the Solidity Compiler plugin and selecting "Compile verifier.sol."
+
+Once the compilation is complete, switch to the "Deploy & Run Transactions" plugin. From the dropdown menu, select "Verifier — browser/verifier.sol" and click "Deploy." You can choose to deploy the contract on the JavaScript VM or any testnet or mainnet. Please note that these contracts are large and may consume significant gas fees.
+
+After deploying the verifier, proceed to the "Compute Witness" and "Generate Proof" sections in the ZoKrates plugin to continue the process.
+
+
+![30](images/30.png)
+![37](images/37.png)
+![38](images/38.png)
+![40](images/40.png)
+![42](images/42.png)
+![43](images/43.png)
+![44](images/44.png)
+
