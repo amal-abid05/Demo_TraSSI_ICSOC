@@ -256,6 +256,9 @@ We now move on to verifying the verifyTx function, not from the Remix IDE, but d
 
 (The contract has been deployed by me, and its address can be used by anyone to verify the transaction. This allows for open and transparent validation of the contract's functionality.)
 
+Link:   https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
+
+
 
 
 
