@@ -11,7 +11,7 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
   https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
 
 
-## Step1: ZKP-based Verifiable Computations
+## Step1: ZKP-based Verifiable Computations (Part1)
 
 We provide a step-by-step guide to assist you in compiling, setting up, exporting the verifier, computing the witness, and generating proofs.
 
@@ -122,7 +122,65 @@ After deploying the verifier, we will proceed to the "Compute Witness" and "Gene
 
 
 
+## Step1: FHE-based Computations on Encrypted Data (Part1)
+
+The FHE computations are provided in this Colab notebook, accessible via the following [link](https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d). This allows anyone to directly test and execute the code without the need for local installations. The notebook is fully set up, enabling researchers to run the computations with ease and explore the functionality of the homomorphic encryption techniques used in our solution.
+
+
+ Install the required Python libraries by running the following commands.
+
+These libraries are essential for enabling ZoKrates cryptographic functions (zokrates_pycrypto), performing homomorphic encryption operations (tenseal), and interacting with the Ethereum blockchain (web3).
+
+``` bash
+# Install the required Python libraries by running the following commands.
+pip install zokrates_pycrypto
+pip install tenseal
+pip install web3
+```
+
+Execute the following code:
+
+``` python
+import tenseal as ts
+import hashlib
+from zokrates_pycrypto.eddsa import PrivateKey, PublicKey
+from zokrates_pycrypto.field import FQ
+from zokrates_pycrypto.utils import write_signature_for_zokrates_cli
+
+if __name__ == "__main__":
+
+    # Setup TenSEAL context
+    context = ts.context(
+            ts.SCHEME_TYPE.CKKS,
+            poly_modulus_degree=8192,
+            coeff_mod_bit_sizes=[60, 40, 40, 60]
+          )
+    context.generate_galois_keys()
+    context.global_scale = 2**40
+
+    # Encrypt the number of units sold
+    num_units = [100]
+    encrypted_num_units = ts.ckks_vector(context, num_units)
+
+    # Encrypt the price per unit
+    price_per_unit = [50]
+    encrypted_price_per_unit = ts.ckks_vector(context,price_per_unit)
+
+    # Compute the total revenue
+    encrypted_revenue = encrypted_num_units * encrypted_price_per_unit
+
+    # Setup maximum threshold
+    max_threshold = "7000"
 
 
 
+    # Write witness arguments to disk / Serialize the decrypted result and max_threshold for ZoKrates input
+    path = "zokrates_inputs.txt"
+    #witness = "" + encrypted_revenue.decrypt()[0] + " " + max_threshold
+    witness = str(round(encrypted_revenue.decrypt()[0])) + " " + max_threshold
+    with open(path, "w+") as f:
+        f.write("".join(witness))
 
+    print(str(round(encrypted_revenue.decrypt()[0])) + " " + max_threshold)
+
+```
