@@ -99,13 +99,14 @@ Instructions for compiling and deploying the Verifier smart contract are provide
 
 
 
-Compile and Deploy "Verifier.sol"
+### 5.Compile and Deploy "Verifier.sol"
 
-To compile and deploy the verifier.sol contract, begin by navigating to the Solidity Compiler plugin and selecting "Compile verifier.sol."
+To compile and deploy the "Verifier.sol" contract, begin by navigating to the Solidity Compiler plugin and selecting "Compile" "Verifier.sol."
 
-Once the compilation is complete, switch to the "Deploy & Run Transactions" plugin. From the dropdown menu, select "Verifier — browser/verifier.sol" and click "Deploy." You can choose to deploy the contract on the JavaScript VM or any testnet or mainnet. Please note that these contracts are large and may consume significant gas fees.
+Once the compilation is complete, switch to the "Deploy & Run Transactions" plugin. From the dropdown menu, select "Verifier — browser/verifier.sol" and click "Deploy." You can choose to deploy the contract on the JavaScript VM (Remix VM) or any testnet or mainnet. Please note that these contracts are large and may consume significant gas fees.
 
-After deploying the verifier, proceed to the "Compute Witness" and "Generate Proof" sections in the ZoKrates plugin to continue the process.
+If you select the JavaScript VM (Remix VM), you do not need to use MetaMask. However, if you choose to deploy on a testnet like Sepolia, you will need to use MetaMask, as illustrated in the figure below.
+(You can simply use JavaScript VM (Remix VM)).
 
 
 ![30](images/30.png)
@@ -115,4 +116,13 @@ After deploying the verifier, proceed to the "Compute Witness" and "Generate Pro
 ![42](images/42.png)
 ![43](images/43.png)
 ![44](images/44.png)
+
+After deploying the verifier, we will proceed to the "Compute Witness" and "Generate Proof" steps in ZoKrates. However, before we can compute the witness, we need to obtain the necessary "inputs" from the FHE calculations. Therefore, the next step is to run the Python code for the FHE computations first.
+
+
+
+
+
+
+
 
