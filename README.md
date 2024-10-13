@@ -192,8 +192,13 @@ Now that we have obtained the necessary inputs from the FHE program, we can proc
 
 ### Compute Witness
 
+To compute the witness, you will be prompted to provide input parameters. After entering the required values, click the "Compute" button to generate the witness.
+
+If the operation completes successfully, a confirmation message will be displayed. You can view the witness by opening it in the Remix Editor or download it for further use.
+
 Inputs:
 
+```
 pkA: ["14897476871502190904409029696666322856887678969656209656241038339251270171395","16668832459046858928951622951481252834155254151733002984053501254009901876174"]
 
 pkB: ["14897476871502190904409029696666322856887678969656209656241038339251270171395","16668832459046858928951622951481252834155254151733002984053501254009901876174"]
@@ -209,14 +214,22 @@ revenue: 5000
 max_Threashold: 7000
 
 skB: 1997011358982923168928344992199991480689546837621580239342656433234255379025
+```
 
-
-
-
+![50](images/50.png)
 
 
 ### Generate Proof
 
+Click on "Generate." The output, as displayed below, should appear.
+
+You have the options to copy the output, open it in the Remix Editor, or download it for further use.
+
+![51](images/51.png)
+
 
 ### Verify
 
+To validate the proof, navigate to the "Deploy & Run Transactions" plugin, paste the Remix-compatible parameters into the verifyTx field, and click the "transact" button.
+
+Once the transaction is completed, expand the logs and review the decoded output. If successful, you should see the result: "0": "bool: r true", indicating that the transaction has been successfully verified.
