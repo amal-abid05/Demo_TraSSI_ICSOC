@@ -11,7 +11,7 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
   https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
 
 
-## ZKP-based Verifiable Computations (Step1)
+## Step1: ZKP-based Verifiable Computations
 
 We provide a step-by-step guide to assist you in compiling, setting up, exporting the verifier, computing the witness, and generating proofs.
 
