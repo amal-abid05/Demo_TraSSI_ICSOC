@@ -233,3 +233,18 @@ You have the options to copy the output, open it in the Remix Editor, or downloa
 To validate the proof, navigate to the "Deploy & Run Transactions" plugin, paste the Remix-compatible parameters into the verifyTx field, and click the "transact" button.
 
 Once the transaction is completed, expand the logs and review the decoded output. If successful, you should see the result: "0": "bool: r true", indicating that the transaction has been successfully verified.
+
+inputs (in my case):
+
+```
+proof:
+[["0x100f24115e5bf671cf48fedd290dff306d8c474d0f27ec19003db82c99fb60b0","0x1eb81f8d3b71a2c47f39533cb63928b74e2e3fd6c8bef5caf446e9f47e5b5b1f"],[["0x1e54b328e03a9d1e571633bbba06d404cdb5296740c07cede3cbe5fbe71a3bb9","0x199693022ba8e2a241cae869109c9d74a922446d75e407126d08f2dbeb177570"],["0x156ce59157362e27f7044732c4465d500136cdbd6af8ae3f473a2182f079f5d3","0x1af3d01354aa35a11d2c187db2b3aa483627c64d266155dceccdbc029f917b69"]],["0x16fdcfc8f8f782101ecfaf1b08d2c9081248bee1f69574a0ab870f09ecb14318","0x282d342f8e2410487b793bc285d74c2963f1f5d2c7eebd789f53a9310c0df065"]]
+
+input:
+["0x20efac506a3d21dc3882103a7a727ad821f2422988783ee8b2f1762ecd0dbb03","0x24da398ed1996eae6dafb3a687806e3a49c3add6949774d6017b30a66b2503ce","0x20efac506a3d21dc3882103a7a727ad821f2422988783ee8b2f1762ecd0dbb03","0x24da398ed1996eae6dafb3a687806e3a49c3add6949774d6017b30a66b2503ce","0x02b3e19b345383d0cea34e380ad1753eb50091bd615826a68957c5416e6b8e13","0x05e87792f7b7d073415d94509d1ce9f991248acc30ffa78fb0e354100676f2b5","0x0000000000000000000000000000000000000000000000000000000000001b58","0x0000000000000000000000000000000000000000000000000000000000000001"]
+
+```
+
+![52](images/52.png)
+
+![53](images/53.png)
