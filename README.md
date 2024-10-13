@@ -122,12 +122,13 @@ After deploying the verifier, we will proceed to the "Compute Witness" and "Gene
 
 
 
-## Step1: FHE-based Computations on Encrypted Data (Part1)
+## Step2: FHE-based Computations on Encrypted Data (Part1)
 
 The FHE computations are provided in this Colab notebook, accessible via the following [link](https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d). This allows anyone to directly test and execute the code without the need for local installations. The notebook is fully set up, enabling researchers to run the computations with ease and explore the functionality of the homomorphic encryption techniques used in our solution.
 
+Link: https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
 
-Install the required Python libraries by running the following commands:
+### Install the required Python libraries by running the following commands:
 
 These libraries are essential for enabling ZoKrates cryptographic functions (zokrates_pycrypto), performing homomorphic encryption operations (tenseal), and interacting with the Ethereum blockchain (web3).
 
@@ -137,7 +138,7 @@ pip install tenseal
 pip install web3
 ```
 
-Execute the following code:
+### Execute the following code:
 
 ``` python
 import tenseal as ts
