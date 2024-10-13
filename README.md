@@ -248,3 +248,23 @@ input:
 ![52](images/52.png)
 
 ![53](images/53.png)
+
+
+## Step4: FHE-based Computations on Encrypted Data (Part2)
+
+We now move on to verifying the verifyTx function, not from the Remix IDE, but directly from the Python program. You can execute this verification through the provided Colab notebook, using the address of the contract that has been deployed on the Sepolia testnet. There's no need to modify the program; simply run the notebook as is, and it will interact with the deployed contract.
+
+(The contract has been deployed by me, and its address can be used by anyone to verify the transaction. This allows for open and transparent validation of the contract's functionality.)
+
+
+
+
+
+
+
+
+
+
+
+
+
