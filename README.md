@@ -175,12 +175,26 @@ if __name__ == "__main__":
 
 
     # Write witness arguments to disk / Serialize the decrypted result and max_threshold for ZoKrates input
-    path = "zokrates_inputs.txt"
+    #path = "zokrates_inputs.txt"
     #witness = "" + encrypted_revenue.decrypt()[0] + " " + max_threshold
-    witness = str(round(encrypted_revenue.decrypt()[0])) + " " + max_threshold
-    with open(path, "w+") as f:
-        f.write("".join(witness))
+    #witness = str(round(encrypted_revenue.decrypt()[0])) + " " + max_threshold
+    #with open(path, "w+") as f:
+        #f.write("".join(witness))
 
     print(str(round(encrypted_revenue.decrypt()[0])) + " " + max_threshold)
 
 ```
+
+
+## Step3: ZKP-based Verifiable Computations (Part2)
+
+Now that we have obtained the necessary inputs from the FHE program, we can proceed with computing the witness in ZoKrates.
+
+### Compute Witness
+
+
+### Generate Proof
+
+
+### Verify
+
