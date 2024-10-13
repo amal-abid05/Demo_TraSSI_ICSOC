@@ -44,7 +44,7 @@ This will prepare your environment for the subsequent tasks.
 
 To proceed, copy the entire program code from the designated source.
 
-``` bash
+``` python
 from "ecc/babyjubjubParams" import BabyJubJubParams;
 import "ecc/babyjubjubParams" as context;
 import "ecc/proofOfOwnership" as proofOfOwnership;
@@ -127,12 +127,11 @@ After deploying the verifier, we will proceed to the "Compute Witness" and "Gene
 The FHE computations are provided in this Colab notebook, accessible via the following [link](https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d). This allows anyone to directly test and execute the code without the need for local installations. The notebook is fully set up, enabling researchers to run the computations with ease and explore the functionality of the homomorphic encryption techniques used in our solution.
 
 
- Install the required Python libraries by running the following commands.
+Install the required Python libraries by running the following commands:
 
 These libraries are essential for enabling ZoKrates cryptographic functions (zokrates_pycrypto), performing homomorphic encryption operations (tenseal), and interacting with the Ethereum blockchain (web3).
 
 ``` bash
-# Install the required Python libraries by running the following commands.
 pip install zokrates_pycrypto
 pip install tenseal
 pip install web3
