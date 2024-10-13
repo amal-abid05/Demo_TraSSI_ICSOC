@@ -11,17 +11,17 @@ To simplify the task for researchers in reproducing our TraSSI solution, we have
   https://colab.research.google.com/drive/1HK18ven1k0utCf6WnSoBIxQOCo6usO4d
 
 
-## Zokrates Plugin
+## ZKP-based Verifiable Computations (Step1)
 
 We provide a step-by-step guide to assist you in compiling, setting up, exporting the verifier, computing the witness, and generating proofs.
 
 For documentation on ZoKrates open the [link](https://zokrates.github.io/gettingstarted.html).
 
-To begin:
+### 1. Install the Zokrates Plugin
 
-1. Open the [Remix IDE](https://remix.ethereum.org/) in a browser window.
+Open the [Remix IDE](https://remix.ethereum.org/) in a browser window.
 
-2. Navigate to the Plugin Manager and activate the following plugins:
+Navigate to the Plugin Manager and activate the following plugins:
 
 - ZoKrates
 
@@ -40,7 +40,7 @@ This will prepare your environment for the subsequent tasks.
 ![7](images/7.png)
 
 
-3. Compilation
+### 2. Compile
 
 To proceed, copy the entire program code from the designated source.
 
@@ -78,7 +78,7 @@ If the process completes without errors, a message indicating successful compila
 ![11](images/11.png)
 
 
-4. Setup
+### 3. Setup
 
 The next step is to perform the setup. Click on "Setup" to expand the section, then select "Run Setup."
 
@@ -86,7 +86,8 @@ If the setup is successful, a confirmation message will appear. You can download
 
 ![13](images/13.png)
 
-5. Export Verifier
+
+### 4. Export Verifier
 
 We move to the Export Verifier step.
 
